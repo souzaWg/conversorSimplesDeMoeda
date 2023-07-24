@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+body{
+    background-image: url(IMG/wallpaper.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 200px;
+}
+:root{
+    /* --color: #4c036e; */
+    --family: 'Tektur', cursive;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.real{
+    background-image: url(IMG/real.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 160px;
+    box-shadow:  0 0 200px rgba(0, 0, 0, 0.5);
+    opacity: 0.9;
+    /* border: 5px solid rgba(255, 255, 255, 0.5); */
+  
+}   
+.blur{
+    width: 100%;
+    height: 100%;  
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5); */
+}
+#reais{
+    border-radius: 20px;
+    background-color: transparent;
+    outline: none;
+    backdrop-filter: blur(2px);
+    margin-top: -40px;
+}
+.money{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.dolar{
+    width: 150px;
+    height: 100px;
+    background-image: url(IMG/dolar.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow:  0 0 200px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.yuan{
+    width: 150px;
+    height: 100px;
+    background-image: url(IMG/yuan2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow:  0 0 200px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.euro{
+    width: 150px;
+    height: 100px;
+    background-image: url(IMG/euro.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow:  0 0 200px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.yen{
+    width: 150px;
+    height: 100px;
+    background-image: url(IMG/yen.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow:  0 0 200px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .dolar:hover,.euro:hover,.yen:hover,.yuan:hover{
+    margin-top: 10px;
+} */
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height:50%;
+    transition: 0.5s;
+    color: var(--color);
+}
+.box:hover{
+    box-shadow:  0 0 100px 50px rgba(0, 0, 0, 0.5);
+    margin-top: 5px;
+    backdrop-filter: blur(0px);
+
+}
+
+.box > #Dollar{
+    opacity: 0;
+    transition: 0.5s;
+    /* color: var(--color); */
+    font-weight: bolder;
+    font-size: 2em;
+    font-family: var(--family);
+    text-shadow: 0 0 50px rgba(0, 0, 0, 0.1);  
+}
+
+.box > #Dollar:hover{
+    filter: blur(-2px);
+    opacity: 1;
+    margin-top: -10px;
+    text-shadow: 0 0 20px rgb(0, 247, 255); 
+}
+.box > #Euro{
+    opacity: 0;
+    transition: 0.5s;
+    /* color: var(--color); */
+    font-weight: bolder;
+    font-size: 2em;
+    font-family: var(--family);
+    
+}
+.box > #Euro:hover{
+    opacity: 1;
+    margin-top: -10px;
+    text-shadow: 0 0 20px rgb(0, 247, 255); 
+}
+.box > #Yen{
+    opacity: 0;
+    transition: 0.5s;
+    /* color: var(--color); */
+    font-weight: bolder;
+    font-size: 2em;
+    font-family: var(--family);
+}
+.box > #Yen:hover{
+    text-shadow: 0 0 20px rgb(0, 247, 255);  
+    opacity: 1;
+    margin-top: -10px;
+}
+#Yuan{
+    opacity: 0;
+    transition: 0.5s;
+    color: var(--color);
+    font-weight: bolder;
+    font-size: 2em;
+    font-family: var(--family);
+    text-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
+#Yuan:hover{
+    opacity: 1;
+    margin-top: -10px;
+    text-shadow: 0 0 20px rgb(0, 247, 255); 
+}

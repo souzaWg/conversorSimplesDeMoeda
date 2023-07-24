@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Conversor de Moedas</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <div class="container">
+
+          <div class="real">
+               <div class="blur">
+                    <input id="reais" type="number" placeholder="Valor" oninput="realValueConvert(this.value)"
+                         onchange="realValueConvert(this.value)">
+               </div>
+          </div>
+
+     </div>
+     <div class="money">
+
+          <div class="dolar">
+               <div class="box">
+
+                    <span id="Dollar"></span></p>
+               </div>
+          </div>
+          <div class="yen">
+               <div class="box">
+
+                    <span id="Yen"></span></p>
+               </div>
+          </div>
+          <div class="euro">
+               <div class="box">
+
+                    <span id="Euro"></span></p>
+               </div>
+          </div>
+          <div class="yuan">
+               <div class="box">
+
+                    <span id="Yuan"></span></p>
+               </div>
+          </div>
+
+     </div>
+
+
+
+     <script src="index.js"></script>
+</body>
+
+</html>
